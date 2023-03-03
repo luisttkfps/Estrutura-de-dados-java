@@ -1,17 +1,17 @@
-package com.datastruct.pileexample;
+package com.datastruct.queue;
 
 public class Node {
 	private int data;
-	private Node referenceNode;
+	private Node reference;
 	
 	public Node() {
 	}
-
+	
 	public Node(int data) {
 		this.data = data;
+		this.reference = null;
 	}
 
-	
 	public int getData() {
 		return data;
 	}
@@ -20,20 +20,17 @@ public class Node {
 		this.data = data;
 	}
 
-	public Node getReferenceNode() {
-		return referenceNode;
+	public Node getReference() {
+		return reference;
 	}
 
-	public void setReferenceNode(Node referenceNode) {
-		this.referenceNode = referenceNode;
+	public void setReference(Node reference) {
+		this.reference = reference;
 	}
 
 	@Override
 	public String toString() {
 		return "Node [data=" + data + "]";
 	}
-	
-	
-	
 	
 }
